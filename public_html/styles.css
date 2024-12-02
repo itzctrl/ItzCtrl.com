@@ -1,0 +1,98 @@
+body {
+    font-family: 'Monospace', monospace;
+    background-color: #1E1E2E;
+    color: #D0D0E0;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    height: 100%;
+    width: 200px;
+    background-color: #161A2D;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 60px;
+}
+
+.sidebar ul li {
+    padding: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+   background-color:#252A40; 
+}
+
+.content {
+   margin-left: 0;
+   padding: 20px;
+   max-width: 800px; 
+   margin: auto; 
+   text-align: center; 
+}
+
+.discord-button {
+   background-color: #7289DA;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.discord-button:hover {
+   background-color: #5b6eae;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.content a {
+    color: #7289DA;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.content a:hover {
+    color: #5b6eae;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 60px 20px 20px;
+    }
+}
